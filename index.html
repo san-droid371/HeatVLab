@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shell & Tube HeatEx</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shell and Tube Heat Exchanger</h1>
+        <hr>
+        <div class="simulator-body">
+            <h2>Simulation</h2>
+            <div class="flow-meter">
+                <input type="range" min="0" max="5" value="0" oninput="rangeValue.innerText = this.value">
+<p id="rangeValue">0</p>
+            </div>
+            <div class="box">
+                <div id="heatex">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>
+                <div id="cin">
+                    <div id="cinflow"></div>
+                </div>
+                <div id="cout">
+                    <div id="coutflow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
