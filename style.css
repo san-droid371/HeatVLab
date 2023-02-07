@@ -1,21 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-h1{
+
+h1 {
     margin: 3rem 3rem 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-hr{
+
+hr {
     width: 80vw;
 }
-.box{
+
+.box {
     width: 50vw;
     height: 60vh;
     border: 2px solid #000;
@@ -24,24 +28,27 @@ hr{
     align-items: center;
     position: relative;
 }
-#heatex{
+
+#heatex {
     border: 2px solid #000;
     width: 30%;
     height: 70px;
-    border-radius:40px;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 8px;
 }
-.lines{
+
+.lines {
     width: 70%;
     height: 8px;
     border: 2px solid #000;
     margin: 5px;
 }
-#cin{
+
+#cin {
     width: 25%;
     height: 10px;
     border: 2px solid #000;
@@ -50,7 +57,8 @@ hr{
     border-right: none;
     border-left: none;
 }
-#cout{
+
+#cout {
     width: 25%;
     height: 10px;
     border: 2px solid #000;
@@ -59,23 +67,35 @@ hr{
     border-right: none;
     border-left: none;
 }
-#cinflow{
+
+#cinflow {
     width: 100%;
     border: none;
     height: 100%;
 }
-.cinflow-active{
+
+.cinflow-active {
     animation-name: fillbox;
     animation-duration: infinite;
     /* animation-iteration-count: infinite; */
 }
+
 @keyframes fillbox {
-    from{
+    from {
         width: 0%;
         background-color: aqua;
     }
-    to{
+
+    to {
         width: 100%;
         background-color: aqua;
     }
+}
+
+
+.table-container{
+    max-width: 80%;
+}
+.result{
+    max-width: 60%;
 }

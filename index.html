@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Shell & Tube HeatEx</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Shell and Tube Heat Exchanger</h1>
         <hr>
         <div class="simulator-body">
             <h2>Simulation</h2>
-            <div class="flow-meter">
-                <input type="range" min="0" max="5" value="0" oninput="rangeValue.innerText = this.value">
-<p id="rangeValue">0</p>
-            </div>
+            
             <div class="box">
                 <div id="heatex">
                     <div class="lines"></div>
@@ -32,7 +32,91 @@
                 </div>
             </div>
         </div>
+        <p>Hot Water Flow rate (l/min)</p>
+            <div class="flow-meter">
+                <input type="range" min="0" max="5" value="0" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">0</p>
+            </div>
+            <div class="table-container">
+                <h3>Tabulation :</h3>
+        <table class="table table-bordered border-primary">
+            <thead class="text-center">
+                <tr>
+                  <th scope="col">S.No.</th>
+                  <th scope="col">Tci</th>
+                  <th scope="col">Tco</th>
+                  <th scope="col">Thi</th>
+                  <th scope="col">Tho</th>
+                  <th scope="col">Cold water flow rate, l/min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+               
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                  <td><input type="number"></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+        <div class="result">
+            <h3>Result :</h3>
+            <p>The experiment is conducted & the values of the heat transfer co-efficient are calculated & tabulated . The heat transfer co-efficient for the given shell and tube heat Exchanger is determined as follows:</p>
+            <table class="table table-bordered border-primary text-center">
+                <thead class="text-center">
+                    <tr>
+                      <th scope="col">S.No.</th>
+                      <th scope="col">U( W/m&#178;&deg;C)</th>
+                      <th scope="col">h<sub>i</sub>( W/m&#178;&deg;C)</th>
+                      <th scope="col">h<sub>s</sub>( W/m&#178;&deg;C)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                   
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+              </table>
+            
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
